@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "Shopping list",
+  "short_name": "Shopping list",
+  "version": "it.scompo.shoppinglist",
+  "description": "A simple shopping list app",
+  "author": "Mauro Scomparin",
+  "icons": [],
+  "start_url": "index.html"
+}

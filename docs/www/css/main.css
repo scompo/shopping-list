@@ -1,0 +1,19 @@
+html {
+  font-family: sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+button {
+  margin: 0.2vw;
+  padding: 0px;
+}
+
