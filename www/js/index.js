@@ -82,21 +82,21 @@ async function createItemElement(config) {
 	const itemId = item._id
 
 	const buttonDelete = await createButton({
-		html: '<img src="/img/x-square.svg" data-id="' + itemId + '"></img>',
+		html: '<img src="img/x-square.svg" data-id="' + itemId + '"></img>',
 		id: itemId,
 		onClickFunction: onClickDeleteItem
 	})
 	itemElement.appendChild(buttonDelete)
 
 	const buttonEdit = await createButton({
-		html: '<img src="/img/edit.svg" data-id="' + itemId + '"></img>',
+		html: '<img src="img/edit.svg" data-id="' + itemId + '"></img>',
 		id: itemId,
 		onClickFunction: onClickEditItem
 	})
 	itemElement.appendChild(buttonEdit)
 
 	const buttonToggle = await createButton({
-		html: (item && item.bought) ? '<img src="/img/square.svg" data-id="' + itemId + '"></img>': '<img src="/img/check-square.svg" data-id="' + itemId + '"></img>',
+		html: (item && item.bought) ? '<img src="img/square.svg" data-id="' + itemId + '"></img>': '<img src="img/check-square.svg" data-id="' + itemId + '"></img>',
 		id: itemId,
 		onClickFunction: (item && item.bought) ? onClickUnBuyItem : onClickBuyItem
 	})
